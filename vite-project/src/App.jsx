@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Register from './Components/Register'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import Loging from './Components/Login';
+import Login from './Components/Login';
+
 
 function App() {
 
@@ -16,8 +17,8 @@ function App() {
         </div>
         <Routes>
 
-          <Route path='/' Component={Loging}/>
-          <Route path='/register' Component={Register}></Route>
+          <Route path='/' Component={<Login/>}/>
+          <Route path='/register' Component={<Register/>}></Route>
         </Routes>
       </Router>
       
